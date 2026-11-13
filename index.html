@@ -260,16 +260,28 @@
       </div>
     </section>
 
-    <!-- 2. KALENDER -->
+  <!-- 2. KALENDER (Upcoming Events News Reel) -->
     <section id="view-kalender" class="view-section">
-      <header class="view-header">
-        <h1 class="view-title">Kalender</h1>
-        <p class="view-subtitle">Døgnrytme, faste tider og begivenheder</p>
+      <header class="view-header section-pad">
+        <div>
+          <h1 class="view-title">Alumnekalenderen</h1>
+          <p class="view-subtitle">Overblik over kostskolerelateret begivenheder</p>
+        </div>
+        <button id="openAddEventBtn" class="add-btn" aria-label="Tilføj begivenhed">+</button>
       </header>
-      <div class="glass-card liquid-glass">
-        <h3>Hverdagsrytme</h3>
-        <p>Her indsættes faste spisetider, morgensamling, studietime og aftenro.</p>
+
+      <!-- Horisontal News Reel -->
+      <div class="reel-label">
+        <span class="live-dot"></span>
+        <span>Kommende begivenheder</span>
       </div>
+      <div id="newsReel" class="news-reel"></div>
+
+      <!-- Samlet oversigt længere fremme -->
+      <div class="reel-label" style="margin-top: 8px;">
+        <span>Resten af skoleåret</span>
+      </div>
+      <div id="agendaList" class="agenda-list"></div>
     </section>
 
     <!-- 3. KONTAKTER -->
